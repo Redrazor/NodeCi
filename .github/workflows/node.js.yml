@@ -37,7 +37,8 @@ jobs:
       uses: supercharge/mongodb-github-action@1.8.0
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
-    - uses: shogo82148/actions-setup-redis@v1
-      with:
-        redis-version: '6.x'
-    - run: redis-cli ping 
+    - name: Start Redis Server
+      uses: shogo82148/actions-setup-redis@v1
+        with:
+          redis-version: '6.x'
+      - run: redis-cli ping 
