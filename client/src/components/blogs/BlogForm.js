@@ -2,7 +2,7 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import BlogField from './BlogField';
 import formFields from './formFields';
 
